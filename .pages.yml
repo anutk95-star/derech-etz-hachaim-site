@@ -1,0 +1,135 @@
+# תצורת פאנל העריכה (Pages CMS) — נוצר אוטומטית
+media:
+  - name: assets
+    label: "תמונות"
+    path: assets
+    extensions: [png, jpg, jpeg, webp, svg]
+content:
+  - name: site
+    label: "הגדרות כלליות"
+    type: file
+    path: content/site.json
+    fields:
+      - { name: brand_name, label: "שם העסק", type: string }
+      - { name: brand_sub, label: "תיאור תחת השם", type: string }
+      - { name: phone, label: "טלפון", type: string }
+      - { name: whatsapp, label: "מספר וואטסאפ (עם 972)", type: string }
+      - { name: service_area, label: "אזור שירות", type: string }
+      - { name: cta_label, label: "טקסט כפתור ראשי", type: string }
+  - name: home
+    label: "דף הבית"
+    type: file
+    path: content/home.json
+    fields:
+      - { name: hero_title, label: "כותרת ראשית", type: string }
+      - { name: hero_text, label: "טקסט פתיחה", type: text }
+      - { name: hero_image, label: "תמונת פתיחה", type: image }
+      - { name: services_eyebrow, label: "תווית מקטע שירותים", type: string }
+      - { name: services_title, label: "כותרת מקטע שירותים", type: string }
+      - { name: card1_title, label: "כרטיס 1 · כותרת", type: string }
+      - { name: card1_text, label: "כרטיס 1 · טקסט", type: text }
+      - { name: card2_title, label: "כרטיס 2 · כותרת", type: string }
+      - { name: card2_text, label: "כרטיס 2 · טקסט", type: text }
+      - { name: card3_title, label: "כרטיס 3 · כותרת", type: string }
+      - { name: card3_text, label: "כרטיס 3 · טקסט", type: text }
+      - { name: quote, label: "ציטוט", type: string }
+      - { name: closing_title, label: "כותרת סיום", type: string }
+      - { name: closing_text, label: "טקסט סיום", type: text }
+  - name: approach
+    label: "עמוד · הגישה"
+    type: file
+    path: content/approach.json
+    fields:
+      - { name: eyebrow, label: "תווית עליונה", type: string }
+      - { name: title, label: "כותרת", type: string }
+      - { name: intro, label: "פסקת פתיחה", type: text }
+      - { name: layers_title, label: "כותרת רבדי האמון", type: string }
+      - { name: layer1_title, label: "רובד 1 · כותרת", type: string }
+      - { name: layer1_text, label: "רובד 1 · טקסט", type: text }
+      - { name: layer2_title, label: "רובד 2 · כותרת", type: string }
+      - { name: layer2_text, label: "רובד 2 · טקסט", type: text }
+      - { name: layer3_title, label: "רובד 3 · כותרת", type: string }
+      - { name: layer3_text, label: "רובד 3 · טקסט", type: text }
+      - { name: layer4_title, label: "רובד 4 · כותרת", type: string }
+      - { name: layer4_text, label: "רובד 4 · טקסט", type: text }
+      - { name: tools_title, label: "כותרת הכלים", type: string }
+      - { name: tools_text, label: "טקסט הכלים", type: text }
+      - { name: quote, label: "ציטוט", type: string }
+      - { name: good_birth, label: "הגדרת לידה טובה", type: text }
+  - name: doula
+    label: "עמוד · ליווי דולה"
+    type: file
+    path: content/doula.json
+    fields:
+      - { name: eyebrow, label: "תווית עליונה", type: string }
+      - { name: title, label: "כותרת", type: string }
+      - { name: intro, label: "פסקת פתיחה", type: text }
+      - { name: includes_title, label: "כותרת · מה כולל", type: string }
+      - { name: includes, label: "רשימה · מה כולל (שורה לכל פריט)", type: text }
+      - { name: forwhom_title, label: "כותרת · למי מתאים", type: string }
+      - { name: forwhom, label: "טקסט · למי מתאים", type: text }
+      - { name: price, label: "מחיר (ריק = לא מוצג)", type: string }
+  - name: course
+    label: "עמוד · קורס הכנה ללידה"
+    type: file
+    path: content/course.json
+    fields:
+      - { name: eyebrow, label: "תווית עליונה", type: string }
+      - { name: title, label: "כותרת", type: string }
+      - { name: intro, label: "פסקת פתיחה", type: text }
+      - { name: sessions_title, label: "כותרת · מבנה המסע", type: string }
+      - { name: s1_title, label: "מפגש 1 · כותרת", type: string }
+      - { name: s1_text, label: "מפגש 1 · טקסט", type: text }
+      - { name: s2_title, label: "מפגש 2 · כותרת", type: string }
+      - { name: s2_text, label: "מפגש 2 · טקסט", type: text }
+      - { name: s3_title, label: "מפגש 3 · כותרת", type: string }
+      - { name: s3_text, label: "מפגש 3 · טקסט", type: text }
+      - { name: s4_title, label: "מפגש 4 · כותרת", type: string }
+      - { name: s4_text, label: "מפגש 4 · טקסט", type: text }
+      - { name: price, label: "מחיר (ריק = לא מוצג)", type: string }
+  - name: training
+    label: "עמוד · הכשרת מדריכות"
+    type: file
+    path: content/training.json
+    fields:
+      - { name: eyebrow, label: "תווית עליונה", type: string }
+      - { name: title, label: "כותרת", type: string }
+      - { name: intro, label: "פסקת פתיחה", type: text }
+      - { name: forwhom_title, label: "כותרת · למי מתאים", type: string }
+      - { name: forwhom, label: "טקסט · למי מתאים", type: text }
+      - { name: modules_title, label: "כותרת · מה לומדים", type: string }
+      - { name: modules, label: "רשימת מודולים (שורה לכל פריט)", type: text }
+      - { name: options_title, label: "כותרת · דרכים להתחיל", type: string }
+      - { name: options, label: "טקסט · דרכים להתחיל", type: text }
+      - { name: price, label: "מחיר (ריק = לא מוצג)", type: string }
+  - name: about
+    label: "עמוד · עליי"
+    type: file
+    path: content/about.json
+    fields:
+      - { name: eyebrow, label: "תווית עליונה", type: string }
+      - { name: title, label: "כותרת", type: string }
+      - { name: photo, label: "תמונה", type: image }
+      - { name: p1, label: "פסקה 1", type: text }
+      - { name: p2, label: "פסקה 2", type: text }
+  - name: testimonials
+    label: "עמוד · המלצות"
+    type: file
+    path: content/testimonials.json
+    fields:
+      - { name: eyebrow, label: "תווית עליונה", type: string }
+      - { name: title, label: "כותרת", type: string }
+      - { name: intro, label: "פסקת פתיחה", type: text }
+      - { name: t1_text, label: "המלצה 1 · טקסט", type: string }
+      - { name: t1_name, label: "המלצה 1 · שם", type: string }
+      - { name: t2_text, label: "המלצה 2 · טקסט", type: string }
+      - { name: t2_name, label: "המלצה 2 · שם", type: string }
+      - { name: note, label: "הערה", type: text }
+  - name: contact
+    label: "עמוד · צור קשר"
+    type: file
+    path: content/contact.json
+    fields:
+      - { name: eyebrow, label: "תווית עליונה", type: string }
+      - { name: title, label: "כותרת", type: string }
+      - { name: text, label: "טקסט", type: text }
